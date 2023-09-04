@@ -1,0 +1,111 @@
+$main-green: rgb(19, 133, 19);
+$light-green: rgb(234, 255, 237);
+$dark-color: rgb(27, 27, 27);
+$light-color: rgb(255, 255, 255);
+$blue: rgb(1, 107, 156);
+
+//FOOTER
+.footer-wrap{
+    background-color: $dark-color;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    margin-top: 1em;
+    justify-content: center;
+    position: relative;
+    .top-wrap{ //BACK TO TOP BUTTON
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        margin-top: 1em;
+        font-size: 1em;
+        .totop{
+            cursor: pointer;
+        }
+        i{
+            text-align: center;
+            font-size: 2em;
+            color: $main-green;
+        }
+    }
+
+    //ALL 3 MIDDLE COLUMNS CENTERED
+    .top-wrap, .center-wrap, .bottom-wrap{
+        display: flex;
+        justify-content: center;
+    }
+    .center-wrap{ //Center Wrap (Inside white box)
+        width: 70%;
+        margin: auto;
+        border: 2px white solid;
+        h3{
+            color: $main-green;
+            font-weight: bold;
+            font-size: 2em;
+        }
+        .center-right{
+            display: flex;
+            flex-direction: column;
+            li{
+                list-style-type: none;
+                a{
+                    color: white;
+                    background-color: transparent;
+                }
+                a:hover{
+                    color: green;
+                    text-decoration: underline;
+                }
+            }
+
+        }
+        .center-left, .center-center, .center-right{
+            padding: 2em;
+        }
+    }
+    .bottom-wrap{ //Bottom wrap (Bottom row section)
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 1em;
+        .bottom-left{
+            padding: 2em;
+            h3{
+                color: $main-green;
+            }
+        }
+        .bottom-right{
+            display: flex;
+            p{
+                align-self: flex-end;
+                padding: 2em;
+            }
+        }
+    }
+}
+@media (max-width: 800px){
+    .footer-wrap{
+        .center-wrap{
+            border: none;
+        }
+    }
+    .bottom-wrap{
+        flex-direction: column;
+        text-align: center;
+        .bottom-right{
+            p{
+                width: 90%;
+                margin: auto;
+            }
+        }
+    }
+}
+@media (max-width: 480px){
+    .footer-wrap{
+        height: 120vh;
+    }
+    .center-wrap{
+        flex-direction: column;
+        text-align: center;
+    }
+}

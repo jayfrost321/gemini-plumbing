@@ -1,0 +1,430 @@
+$main-green: rgb(19, 133, 19);
+$light-green: rgb(234, 255, 237);
+$dark-color: rgb(14, 14, 14);
+$light-color: rgb(255, 255, 255);
+$blue: rgb(1, 107, 156);
+
+main{
+    background-color: $light-color;
+    margin: 0.5em;
+    .section{
+        background-color: $light-color;
+        text-align: center;
+        padding-bottom: 6%;
+        padding-top: 6%;
+    }
+    .title{
+        font-size: 4em;
+        font-weight: bold;
+        text-align: center;
+    }
+    .summary{
+        font-size: 1.5em;
+        width: 50%;
+        margin: auto;
+        padding: 0.5em;
+    }
+    .btn{
+        font-size: 2em;
+        padding: 0.5em;
+        width: 20%;
+        margin: 1em;
+        border: none;
+        background-color: $main-green;
+        color: white;
+    }
+    .btn:hover{
+        cursor: pointer;
+    }
+    .cross-btn{
+        font-size: 2em;
+        text-align: left;
+        margin-left: 1em;
+        margin-top: 0.8em;
+        a{
+            color: green;
+        }
+    }
+    .home{ //SECTION 1
+        background-color: $light-green;
+        h1{
+            padding-top: 1.5em;
+            font-size: 4em;
+            width: 90%;
+            margin: auto;
+            text-align: center;
+        }
+        h2{
+            font-size: 2em;
+            padding-top: 0.5em;
+        }
+        h3{
+            font-size: 3em;
+            padding-bottom: 1.5em;
+            width: 90%;
+            margin: auto;
+        }
+        p{
+            font-size: 2.25em;
+            width: 50%;
+            margin: auto;
+            padding: 1em;
+        }
+        img{
+            margin-top: 0em;
+            margin-bottom: 2em;
+            background-color: black;
+        }
+    }
+    .services{ //SECTION 2
+        .services-wrap{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: auto;
+            .service{
+                background-color: $light-color;
+                height: 20em;
+                width: 20em;
+                margin: 3em;
+                border: 1px $main-green solid;
+                border-radius: 1px;
+                position: relative;
+                box-shadow: 5px 5px $main-green;
+                .service-img{
+                    margin-top: 0.35em;
+                    font-size: 3em;
+                    color: $main-green;
+                }
+                h4{
+                    margin-top: 0.5em;
+                    font-size: 2em;
+                    margin-bottom: 0.5em;
+                }
+                p{
+                    width: 75%;
+                    margin: auto;
+                    font-size: 1.2em;
+                    margin-bottom: 1.5em;
+                }
+                .service-btn{
+                    padding: 0.5em;
+                    background-color: $main-green;
+                    color: white;
+                    width: 60%;
+                    margin-top: 3em;
+                    border: none;
+                    font-size: 1.5em;
+                    position: absolute;
+                    top: 87%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+                .service-btn:hover{
+                    cursor: pointer;
+                    background-color: $dark-color;
+                    transition: 0.5s;
+                    width: 250px;
+                }
+            }
+            @media(max-width: 420px){
+                .service{
+                    height: 25em;
+                }
+            }
+        }
+    }
+    .pricing{ //SECTION 3
+        background-color: $light-green;
+        .pricing-wrap{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            .price-card{
+                background-color: $light-color;
+                height: 20em;
+                width: 20em;
+                margin: 3em;
+                border: 1px $main-green solid;
+                border-radius: 1px;
+                position: relative;
+                box-shadow: 5px 5px $main-green;
+                .price-img{
+                    margin-top: 0.35em;
+                    font-size: 3em;
+                    color: $main-green;
+                }
+                h4{
+                    margin-top: 0.5em;
+                    font-size: 2.4em;
+                    padding: 0.3em;
+                    margin-bottom: 0.2em;
+                    height: 47px;
+                    color: black;
+                }
+                p{
+                    width: 75%;
+                    margin: auto;
+                    font-size: 1.2em;
+                    margin-bottom: 0.5em;
+                }
+                .service-btn{
+                    padding: 0.5em;
+                    background-color: $main-green;
+                    color: white;
+                    width: 60%;
+                    margin-top: 3em;
+                    border: none;
+                    font-size: 1.5em;
+                    position: absolute;
+                    top: 77%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+                .service-btn:hover{
+                    cursor: pointer;
+                    background-color: $dark-color;
+                    transition: 0.5s;
+                    width: 250px;
+                }
+            }
+        }
+    }
+    .testimonials{ //SECTION 4
+        background-color: $light-color;
+        .testimonials-wrap{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            .testimonial{
+                background-color: white;
+                margin: 3em;
+                padding: 1.2em;
+                width: 23em;
+                height: 26em;
+                position: relative;
+                border: 1px green solid;
+                box-shadow: 5px 5px $main-green;
+                .testimonial-img{
+                    font-size: 3em;
+                    color: green;
+                }
+                .testimonial-content>p{
+                    margin-top: 0.5em;
+                    padding: 0.2em;
+                    font-style: italic;
+                }
+                .testimonial-details{
+                    position: absolute;
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    width: 90%;
+                    bottom: 5%;
+                    .testimonial-pic>img{
+                        border-radius: 50%;
+                        margin-top: 1em;
+                    }
+                }
+            }
+            @media (max-width: 490px){
+                .testimonial{
+                    height: 28em;
+                }
+            }
+        }
+    }
+
+    .gallery{ 
+        background-color: $light-green;
+        .year-wrap{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2em;
+            .gallery-year{
+                font-size: 1.5em;
+                margin: 0.2em;
+                padding: 0.2em;
+                width: 6em;
+                color: $main-green;
+                background-color: $light-green;
+                cursor: pointer;
+                border: 2px $main-green solid;
+            }
+            .gallery-year:hover{
+                background-color: $main-green;
+                color: white;
+                transition: 0.5s;
+            }
+        }
+        .portfolio-wrap{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 5em;
+            .item>img{
+                margin: 0.3em;
+                transition: 1s;
+            }
+            .item:hover{
+                opacity: 0.6;
+                transition: 0.5s;
+            }
+        }
+    }
+    @media (max-width: 640px){
+        .gallery{ //GALLERY RESPONSIVE
+            h1{
+                font-size: 4em;
+            }
+            p{
+                font-size: 1.5em;
+                margin-bottom: 2em;
+                width: 95%;
+            }
+        }
+    }
+
+    .contact{ //SECTION 5
+        background-color: $light-color;
+        .contact-wrap{
+            display: flex;
+            justify-content: space-evenly;
+            padding: 2vw;
+            .contact-form{
+                display: flex;
+                flex-direction: column;
+                width: 80%;
+                align-items: center;
+                p{
+                    font-size: 20px;
+                    width: 100%;
+                    text-align: center;
+                    padding: 0.5em;
+                }
+                form{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 400px;
+                    margin: 1.5em;
+                    padding: 3em;
+                    border-top: 5px $main-green solid;
+                    box-shadow: 0px 0px 5px 2px rgb(219, 219, 219);
+                    .form-group{
+                        display: flex;
+                        flex-direction: column;
+                        text-align: left;
+                        width: 300px;
+                        label{
+                            // font-size: 0.7em;
+                            float: left;
+                        }
+                        input,.message,#select{
+                            width: 300px;
+                            padding: 0.5em;
+                            font-size: 18px;
+                            border: 1px $main-green solid;
+                            background-color: white;
+                            resize:vertical;
+                            max-height: 30vh;
+                        }
+                    }
+                    .submit-btn{
+                        border: none;
+                        margin-top: 1em;
+                        width: 300px;
+                        padding: 0.5em;
+                        font-size: 18px;
+                        background-color: rgb(0, 116, 44);
+                        color: white;
+                    }
+                    .submit-btn:hover{
+                        background-color: rgb(0, 0, 0);
+                        transition: all 0.5s;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .contact-info{
+                border-top: 5px green solid;
+                width: 85%;
+                text-align: left;
+                margin-top: 1.5em;
+                p{
+                    font-size: 20px;
+                    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    margin-bottom: 1.5em;
+                    margin-top: 1em;
+                }
+                h2{
+                    font-size: 16px;
+                    font-weight: normal;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    margin-bottom: 2em;
+                }
+                i{
+                    margin-right: 1em;
+                    color: $main-green;
+                }
+                img{
+                    border-bottom: 10px orange solid;
+                    border-top: 10px rgb(17, 0, 92) solid;
+                }
+                .socials{ //SOCIAL MEDIA LINKS GLOBAL
+                    width: 200px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    background-color: $main-green;
+                    i{
+                        font-size: 1em;
+                        color: white;
+                        padding: 0.5em;
+                        margin: auto;
+                    }
+                    i:hover{
+                        background-color: rgb(44, 44, 44);
+                        transition: 0.5s;
+                    }
+                }
+            }
+        }
+        @media(max-width: 800px){
+            .contact-wrap{
+                flex-direction: column;
+                .contact-form{
+                    width: 100%;
+                }
+                .contact-info{
+                    width: 100%;
+                    text-align: center;
+                    .socials{
+                        margin: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.single-service-wrap{
+    padding-top: 5%;
+    text-align: center;
+    .single-service-title{
+        width: 50%;
+        margin: auto;
+        font-size: 4em;
+        color: $main-green;
+        margin-bottom: 1em;
+    }
+    .single-service-content{
+        width: 50%;
+        margin: auto;
+        font-size: 2em;
+        margin-bottom: 5em;
+    }
+    .single-service-image{
+        margin-top: 3em;
+    }
+}

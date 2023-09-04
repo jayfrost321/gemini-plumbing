@@ -1,0 +1,103 @@
+$main-green: rgb(19, 133, 19);
+$light-green: rgb(234, 255, 237);
+$dark-color: rgb(0, 0, 0);
+$light-color: rgb(255, 255, 255);
+$blue: rgb(1, 107, 156);
+
+*{
+    margin: 0em;
+    padding: 0em;
+}
+
+
+header{
+    background-image: url("../assets/img/image1.jpg");
+    background-position: center;
+    height: 90vh;
+    position: relative;
+    .img-layer{
+        background-color: black;
+        opacity: 0.8;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        // top: 50%;
+        // left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .header-group{
+        height: 90vh;
+    }
+    .heading1{
+        position: absolute;
+        font-size: 2em;
+        color: white;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .heading2{
+        position: absolute;
+        text-align: center;
+        font-size: 3em;
+        color: white;
+        width: 100%;
+        font-weight: bold;
+        top: 17%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .heading3{
+        position: absolute;
+        color: white;
+        font-size: 1.8em;
+        width: 90%;
+        text-align: center;
+        top: 26%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .heading4{
+        position: absolute;
+        color: white;
+        font-size: 1.8em;
+        width: 90%;
+        text-align: center;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        i{
+            margin-right: 0.5em;
+        }
+    }
+    .logo{
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .nav{
+        position: absolute;
+        // display: flex;
+        top: 65%;
+        left: 50%;
+        text-align: center;
+        list-style-type: none;
+        transform: translate(-50%, -50%);
+        li{
+            padding: 0.5em;
+        }
+        a{
+            font-size: 2.2em;
+            text-decoration: none;
+            color: white;
+            text-transform: uppercase;
+        }
+        a:hover{
+            font-style: italic;
+            color: $main-green;
+            transition: all 0.5s;
+        }
+    }
+}
+
